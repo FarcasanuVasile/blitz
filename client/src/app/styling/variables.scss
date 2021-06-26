@@ -1,0 +1,205 @@
+// bootstrap variables overridings
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+$enable-responsive-font-sizes: true;
+
+// Color system
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #666666; // original #6c757d;
+$gray-700: #555555; // original #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$black: #000;
+
+$blue: #04578c; // original #007bff;
+$indigo: #87407e; // original #6610f2;
+$purple: #493967; // original #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$maroon: maroon;
+$orange: #f2812e; // original #fd7e14;
+$yellow: #eeaf36; // original #ffc107;
+$green: #698e00; // original #28a745;
+$green-light: #cde291;
+$teal: #20c997;
+$cyan: #17a2b8;
+$yellow-light: #fff3cd;
+
+$border-color: #eeeeee;
+$body-color: $gray-600;
+$font-family-base: "acumin-pro-condensed";
+$font-size-base: 1rem;
+$badge-font-weight: 400;
+$label-font-weight: 600;
+
+$font-awesome-family-name: "Font Awesome 5 Free";
+$font-awesome-font-weight: 900;
+
+$nav-link-padding-y: 0;
+$nav-link-padding-x: 0;
+
+$default: $green; // #698d00;
+$default-light: $green-light;
+$primary: $purple; // #493967;
+$secondary: #007cb2;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$danger-dark: #c82333;
+$light: $gray-100;
+$dark: $gray-800;
+$primary-light: #eee5ff;
+$warning-light: $yellow-light;
+$mid-gray: $gray-500;
+
+$light-gray: #f3f3f3;
+$developer: $primary-light;
+$orderport: $default;
+
+$theme-colors: (
+  primary: $primary,
+  default: $default,
+  secondary: $secondary,
+  dark: $gray-700,
+  darkest: $black,
+  warning: $yellow,
+  warning-light: $warning-light,
+  primary-light: $primary-light,
+  mid-gray: $mid-gray,
+  light-gray: $light-gray,
+  /* 
+        success
+        danger
+        info
+        light
+        dark
+    */
+);
+
+// icon navigation
+$nav-green: $green; // #698e00;
+$nav-orange: $orange; // #f2812e;
+$nav-indigo: $indigo; // #87407e;
+$nav-blue: $blue; // #04578c;
+$nav-gray: #5b5b5b;
+$nav-yellow: $yellow; // #eeaf36;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white;
+$body-color: $gray-600;
+$body-min-height: 400px;
+
+// Links
+//
+// Style anchor elements.
+$link-color: $secondary;
+// $link-hover-color: darken($link-colorpx, 15%) !default;
+$link-hover-decoration: none;
+// $emphasized-link-hover-darken-percentage: 15% !default;
+$link-decoration: none;
+
+$link-color-bg-dark: $light;
+$link-color-bg-dark-hover: $gray-500;
+
+$nav-tab-link-bg-color: #f8f9fa;
+$nav-tab-link-active-bg-color: $white;
+$nav-tab-link-hover-bg-color: #e2e6ea;
+
+$breadcrumb-bg: $light-gray;
+
+// borders
+$border-width: 0.7px;
+$border-width-lg: 1px;
+$border-width-xl: 1px;
+$border-width-xxl: 2px;
+$border-color: $gray-300;
+$border-color-dark: $gray-500;
+
+$border-tree-width: 0.7px;
+$border-tree-color: $gray-800;
+
+$btn-border-color: $gray-300;
+
+$box-shadow-size: 0 0 0 0.2rem;
+$box-shadow-color: rgba(73, 57, 103, 0.25);
+$box-shadow-invalid-color: rgba(220, 53, 69, 0.25);
+
+$ng-select-line-height: 2rem;
+
+$custom-control-indicator-checked-bg: $primary;
+
+// OrderPort variables
+
+$theme-color-spinner: $primary;
+$theme-color-spinner-fade: $primary-light;
+
+$bg-hoverable-color: #ecf3f8;
+
+$form-group-margin-bottom: 0.5rem;
+
+$charts-domain-color-1: $gray-500;
+$charts-domain-color-2: $default;
+$charts-domain-color-3: $primary;
+$charts-domain-color-4: $secondary;
+$charts-domain-color-5: $blue;
+$charts-domain-color-6: $indigo;
+$charts-domain-color-7: $pink;
+$charts-domain-color-8: $yellow;
+$charts-domain-color-9: $cyan;
+$charts-domain-color-10: $red;
+$charts-domain-color-11: $orange;
+$charts-domain-color-12: $black;
+$charts-domain-color-13: $teal;
+$charts-domain-color-14: $nav-orange;
+$charts-domain-color-15: $gray-600;
+
+:export {
+  default: $default;
+  primary: $primary;
+  secondary: $secondary;
+  dark: $dark;
+
+  info: $info;
+  success: $success;
+  warning: $warning;
+  danger: $danger;
+  warningLight: $warning-light;
+  lightGray: $light-gray;
+  midGray: $mid-gray;
+
+  chartsDomainColor1: $charts-domain-color-1;
+  chartsDomainColor2: $charts-domain-color-2;
+  chartsDomainColor3: $charts-domain-color-3;
+  chartsDomainColor4: $charts-domain-color-4;
+  chartsDomainColor5: $charts-domain-color-5;
+  chartsDomainColor6: $charts-domain-color-6;
+  chartsDomainColor7: $charts-domain-color-7;
+  chartsDomainColor8: $charts-domain-color-8;
+  chartsDomainColor9: $charts-domain-color-9;
+  chartsDomainColor10: $charts-domain-color-10;
+  chartsDomainColor11: $charts-domain-color-11;
+  chartsDomainColor12: $charts-domain-color-12;
+  chartsDomainColor13: $charts-domain-color-13;
+  chartsDomainColor14: $charts-domain-color-14;
+  chartsDomainColor15: $charts-domain-color-15;
+
+  chartsDomainColorA1: $danger;
+  chartsDomainColorA2: $warning;
+  chartsDomainColorA3: $success;
+  chartsDomainColorA4: $info;
+}
