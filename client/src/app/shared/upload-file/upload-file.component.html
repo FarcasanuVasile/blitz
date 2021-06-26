@@ -1,4 +1,5 @@
-<div class="mb-3">
+<div class="mb-3" *ngIf="!isLoading">
     <label for="file" class="form-label">Multiple files input example</label>
     <input class="form-control-file" type="file" id="file" #fileInput multiple (change)="onChange($event)">
 </div>
+<app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
